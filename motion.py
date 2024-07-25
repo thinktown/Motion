@@ -170,7 +170,7 @@ def main(args):
                 
                 for file in remaining_files:
                     file_name = os.path.basename(file)
-                    destination_path = os.path.join(outdir, tempvideos, file_name)
+                    destination_path = os.path.join(outdir, '/tempfiles', file_name)
                     shutil.copy2(file, destination_path)
     else:
         if args.photo is None and args.video is None:
